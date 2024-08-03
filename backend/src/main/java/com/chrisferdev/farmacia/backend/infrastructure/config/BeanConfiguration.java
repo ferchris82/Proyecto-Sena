@@ -1,9 +1,11 @@
 package com.chrisferdev.farmacia.backend.infrastructure.config;
 
 import com.chrisferdev.farmacia.backend.application.CategoryService;
+import com.chrisferdev.farmacia.backend.application.OrderService;
 import com.chrisferdev.farmacia.backend.application.ProductService;
 import com.chrisferdev.farmacia.backend.application.UserService;
 import com.chrisferdev.farmacia.backend.domain.port.ICategoryRepository;
+import com.chrisferdev.farmacia.backend.domain.port.IOrderRepository;
 import com.chrisferdev.farmacia.backend.domain.port.IProductRepository;
 import com.chrisferdev.farmacia.backend.domain.port.IUserRepository;
 import com.chrisferdev.farmacia.backend.infrastructure.adapter.IProductCrudRepository;
@@ -25,5 +27,10 @@ public class BeanConfiguration {
     @Bean
     public ProductService productService(IProductRepository iProductRepository){
         return new ProductService(iProductRepository);
+    }
+
+    @Bean
+    public OrderService orderService(IOrderRepository iOrderRepository){
+        return new OrderService(iOrderRepository);
     }
 }

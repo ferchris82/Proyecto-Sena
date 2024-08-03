@@ -1,4 +1,4 @@
-package com.chrisferdev.farmacia.backend.infrastructure;
+package com.chrisferdev.farmacia.backend.infrastructure.entity;
 
 import com.chrisferdev.farmacia.backend.domain.model.UserType;
 import jakarta.persistence.*;

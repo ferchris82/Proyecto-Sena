@@ -1,7 +1,7 @@
 package com.chrisferdev.farmacia.backend.infrastructure.mapper;
 
 import com.chrisferdev.farmacia.backend.domain.model.User;
-import com.chrisferdev.farmacia.backend.infrastructure.UserEntity;
+import com.chrisferdev.farmacia.backend.infrastructure.entity.UserEntity;
 import org.mapstruct.InheritInverseConfiguration;
 import org.mapstruct.Mapper;
 import org.mapstruct.Mapping;
